@@ -70,3 +70,19 @@ Pensando no desenvolvimento de um controle remoto:
     * Quais atributos que importam para uma Modelo? Olhos claros? Altura.
     * Ex: 5 = Abstrato, 5 Gatos = Concreta.
 
+* **UML Linguagem de Modelagem Unificada**
+    * Linguagem de Modelagem Unificada: no POO utilizamos o UML para fazer diagramas de classes.
+    * É utilizada para facilitar a repesentatividade de objetos não existenes ex: uma aula.
+    * Exemplo de diagrama de classe
+
+![UML](src/images/UML.png) ![UML](src/images/UML2.png)  
+
+* **Modificadores de visibilidade**
+    * indica o nível de acesso de atributos e métodos (represntados dessa forma no UML).
+    * public: +
+        * A classe atual e todas as outras tem acesso. 
+    * private: -
+        * Somente a classe pode acessar.
+    * protected: #
+        * Só a classe atual e as subclasses podem acessar.
+

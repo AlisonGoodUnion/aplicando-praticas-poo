@@ -1,13 +1,13 @@
 package com.company.aula2;
 
 public class Caneta {
-    String modelo;
-    String cor;
-    float ponta;
-    int carga;
-    boolean tampada;
+    public String modelo;
+    public String cor;
+    private float ponta;
+    protected int carga;
+    protected boolean tampada;
 
-    void status() {
+    public void status() {
         System.out.println("Uma caneta: " + this.cor);
         System.out.println("Modelo: " + this.modelo);
         System.out.println("Ponta: " + this.ponta);
@@ -15,7 +15,7 @@ public class Caneta {
         System.out.println("Quantidade de carga: " + this.carga);
     }
 
-    void rabiscar() {
+    public void rabiscar() {
         if (this.tampada) { // this pode ser c1 ou c2, vai depender da instancia
             System.out.println("ERRO! Não pode rabiscar");
         } else {
@@ -23,11 +23,11 @@ public class Caneta {
         }
     }
 
-    void tampar() {
+    public void tampar() {
         this.tampada = true;//this é uma referencia ao objeto que esta chamando este metodo.
     }
 
-    void destampar() {
+    public void destampar() {
         this.tampada = false;
     }
 
