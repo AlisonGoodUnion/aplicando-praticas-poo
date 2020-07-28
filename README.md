@@ -86,3 +86,10 @@ Pensando no desenvolvimento de um controle remoto:
     * protected: #
         * Só a classe atual e as subclasses podem acessar.
 
+* **Métodos Especiais** (garantem  uma segurança)
+    * **Métodos Acessores**: utilizando esses métodos damos acesso mas não direto ao atributo.
+        * *Getters*: métodos utilizados para dar acesso a um atributo;
+            * Ex: getSaldo();
+    * **Métodos Modificadores**: modificamos coisas dentro dos objetos.  
+        * *Setters*: métodos utilizados para popular o valor de um atributo;
+            * Ex: setSaldo(saldo);

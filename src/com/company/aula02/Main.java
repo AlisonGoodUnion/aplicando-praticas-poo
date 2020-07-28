@@ -1,4 +1,4 @@
-package com.company.aula2;
+package com.company.aula02;
 
 public class Main {
 
@@ -11,8 +11,8 @@ public class Main {
         caneta1.rabiscar();
 
         Caneta caneta2 = new Caneta();
-        caneta2.modelo="Bick";
-        caneta2.cor="Preta";
+        caneta2.modelo = "Bick";
+        caneta2.cor = "Preta";
         caneta2.destampar();
 
         //como temos 2 intancias do objeto caneta cada uma se comporta
@@ -20,5 +20,13 @@ public class Main {
         caneta1.rabiscar();
         caneta2.rabiscar();
         caneta2.status();
+        caneta2.carga =10;
+//        caneta2.tampada = true; // atributo private n podemos acessar. devemos utilizar os metodos
+        caneta2.tampar();
+        caneta2.status();
+        caneta2.destampar();
+        caneta2.status();
+
+        caneta2.rabiscar();//caso o método seja private, não podemos acessar o método.
     }
 }
